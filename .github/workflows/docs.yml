@@ -24,20 +24,23 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16
-
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: pnpm-cache
+      - uses: pnpm/action-setup@v2.0.1
+        id: pnpm-install
         with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
+        	version: 7
+					run_install: false
+          
+			- uses: actions/cache@v3
+				name: Packages cache
+				with:
+					path: ${{ steps.pnpm-install.outputs.dest }}
+					key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+					restore-keys: |
+						${{ runner.os }}-pnpm-
 
       # 如果缓存没有命中，安装依赖
       - name: Install dependencies
-        if: steps.pnpm-cache.outputs.cache-hit != 'true'
+        if: steps.pnpm-install.outputs.cache-hit != 'true'
         run: pnpm install
 
       # 运行构建脚本
