@@ -31,6 +31,10 @@ export default defineUserConfig({
 				]
 			},
 			{
+				text: 'wink-render',
+				link: '/render'
+			},
+			{
 				text: 'wink-vue-admin',
 				children: [
 					{
@@ -46,10 +50,6 @@ export default defineUserConfig({
 						link: '/vue-admin/script'
 					}
 				]
-			},
-			{
-				text: 'wink-render',
-				link: '/render'
 			}
 		]
 	})

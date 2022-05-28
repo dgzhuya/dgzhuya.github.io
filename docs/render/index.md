@@ -9,7 +9,7 @@
 | isTextArea   | string       | 是否为多行文本输入框                   | false        |
 | value        | string       | 字段值信息                             | -            |
 | placeholder  | string       | 输入框提示语言                         | -            |
-| isRequired   | boolean      | 右侧展示红色<font color="red">*</font> | false        |
+| isRequired   | boolean      | 输入框右侧展示红色星号                 | false        |
 | leftStyle    | string       | 左侧样式                               | -            |
 | contentStyle | string       | 内容样式                               | -            |
 | rightStyle   | string       | 右侧侧样式                             | -            |
