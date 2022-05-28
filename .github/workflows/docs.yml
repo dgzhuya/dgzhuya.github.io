@@ -25,8 +25,8 @@ jobs:
         with:
           node-version: 16
 					
-      - uses: actions/cache@v3
-        name: Packages cache
+      - name: Packages cache
+				uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-install.outputs.dest }}
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
