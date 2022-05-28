@@ -18,12 +18,34 @@ export default defineUserConfig({
 	theme: defaultTheme({
 		navbar: [
 			{
-				text: 'wink-core',
-				link: '/wink/core'
+				text: 'wink-cli',
+				children: [
+					{
+						text: 'wink-cli',
+						link: '/tools/cli'
+					},
+					{
+						text: 'wink-core',
+						link: '/tools/core'
+					}
+				]
 			},
 			{
 				text: 'wink-vue-admin',
-				link: '/vue-admin'
+				children: [
+					{
+						text: 'wink-api',
+						link: '/vue-admin/api'
+					},
+					{
+						text: 'wink-web',
+						link: '/vue-admin/web'
+					},
+					{
+						text: 'wink-script',
+						link: '/vue-admin/script'
+					}
+				]
 			},
 			{
 				text: 'wink-render',
