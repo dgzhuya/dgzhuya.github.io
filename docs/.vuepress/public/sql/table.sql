@@ -111,9 +111,6 @@ VALUES ('2022-05-14 07:54:15', '2022-05-14 07:54:15', null, '运营者', '运营
 INSERT INTO user (create_time, update_time, delete_time, username, nickname, mobile, gender, address, avatar, password)
 VALUES ('2022-05-14 04:45:23', '2022-06-06 14:02:27', null, 'super-admin', '超级管理员', '', 1, null, null,
         '$2a$10$aSRwOHnesbDdHoeExUy9hOo.vqAdfzspvE9/U4lCX9lI7tbdDIugG');
-INSERT INTO user (create_time, update_time, delete_time, username, nickname, mobile, gender, address, avatar, password)
-VALUES ('2022-06-06 14:02:01', '2022-06-06 14:02:07', null, 'test_user', '测试用户', null, 1, null, null,
-        '$2a$10$CDXaMJgBXMzs27IXIlEiP.jjhNc4xEKAEP/x5bCnAgPyYibjvbDL.');
 
 INSERT INTO user_role (roleId, userId, isMajor)
 VALUES (1, 1, 1);
