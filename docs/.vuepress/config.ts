@@ -18,7 +18,7 @@ export default defineUserConfig({
 	theme: defaultTheme({
 		navbar: [
 			{
-				text: 'wink-cli',
+				text: 'cli工具',
 				children: [
 					{
 						text: 'wink-cli',
@@ -35,7 +35,7 @@ export default defineUserConfig({
 				link: '/render'
 			},
 			{
-				text: 'wink-vue-admin',
+				text: '综合管理系统',
 				children: [
 					{
 						text: 'wink-api',
