@@ -44,10 +44,6 @@ export default defineUserConfig({
 					{
 						text: 'wink-web',
 						link: '/vue-admin/web'
-					},
-					{
-						text: 'wink-script',
-						link: '/vue-admin/script'
 					}
 				]
 			}
